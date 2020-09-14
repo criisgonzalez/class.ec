@@ -1,0 +1,11 @@
+.slider-carrusel {
+  position: relative;
+}
+
+.slider-carrusel {
+  z-index: -1;
+}
+
+.texto-arriba {
+  z-index: 1;
+}
