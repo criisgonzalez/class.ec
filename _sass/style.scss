@@ -1,3 +1,15 @@
+$classBlue: #0971cb;
+$classOrange: #f74d09;
+$classGreen:#74b91f;
+$classYellow:#f7ca01;
+$classBlack: #222b33;
+$coloresLinea: (naranja:#f74d09, verde:#74b91f, amarillo:#f7ca01);
+$coloresTitulos: (azul:#0971cb, naranja:#f74d09, verde:#74b91f);
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
 .slider-carrusel {
     position: relative;
 }
@@ -8,4 +20,38 @@
 
 .texto-arriba {
     z-index: 1;
+}
+
+@each $cuadro,
+$color in $coloresLinea {
+    .borde-#{$cuadro} {
+        border-bottom: 3px solid $color;
+        .titulo-lineas {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@each $cuadro,
+$color in $coloresTitulos {
+    .titulo-#{$cuadro} {
+        color: $color;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.texto-color {
+    color: $classBlack;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: $classBlue;
+    font-weight: 700;
+    margin: 2rem;
 }

@@ -1,3 +1,8 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
 .slider-carrusel {
   position: relative;
 }
@@ -8,4 +13,61 @@
 
 .texto-arriba {
   z-index: 1;
+}
+
+.borde-naranja {
+  border-bottom: 3px solid #f74d09;
+}
+
+.borde-naranja .titulo-lineas {
+  font-size: 1.2rem;
+}
+
+.borde-verde {
+  border-bottom: 3px solid #74b91f;
+}
+
+.borde-verde .titulo-lineas {
+  font-size: 1.2rem;
+}
+
+.borde-amarillo {
+  border-bottom: 3px solid #f7ca01;
+}
+
+.borde-amarillo .titulo-lineas {
+  font-size: 1.2rem;
+}
+
+.titulo-azul {
+  color: #0971cb;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.titulo-naranja {
+  color: #f74d09;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.titulo-verde {
+  color: #74b91f;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.texto-color {
+  color: #222b33;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #0971cb;
+  font-weight: 700;
+  margin: 2rem;
 }
