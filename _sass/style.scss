@@ -4,10 +4,16 @@ $classGreen:#74b91f;
 $classYellow:#f7ca01;
 $classBlack: #222b33;
 $coloresLinea: (naranja:#f74d09, verde:#74b91f, amarillo:#f7ca01);
-$coloresTitulos: (azul:#0971cb, naranja:#f74d09, verde:#74b91f);
+$coloresTitulos: (azul:#0971cb, azul-2:#398ad8, naranja:#f74d09, naranja-2:#ff773d, verde:#74b91f, verde-2:#94ca58, negro:#222b33, negro-2:#494f56);
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    margin: auto;
+    padding: auto;
+}
+
+.navbar-brand {
+    width: 50%;
 }
 
 .slider-carrusel {
@@ -37,16 +43,29 @@ $color in $coloresTitulos {
     .titulo-#{$cuadro} {
         color: $color;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 600;
+        inline-size: 1;
+    }
+}
+
+@each $cuadro,
+$color in $coloresTitulos {
+    .fondo-#{$cuadro} {
+        background-color: $color;
+        color: white;
+        .btn:hover {
+            opacity: 90%;
+            color: white;
+        }
     }
 }
 
 .texto-color {
     color: $classBlack;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .titulo {
@@ -54,4 +73,46 @@ $color in $coloresTitulos {
     color: $classBlue;
     font-weight: 700;
     margin: 2rem;
+}
+
+.cita-l {
+    color: white;
+    font-size: large;
+    line-height: 1;
+}
+
+.cita-md {
+    color: white;
+    font-size: 1.75rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.raya {
+    border-bottom: 3px solid white;
+}
+
+.educacion {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.espacio25 {
+    height: 25px;
+}
+
+.pequeno150 {
+    height: 150px;
+}
+
+.mediano350 {
+    height: 350px;
+}
+
+.alto500 {
+    height: 500px;
+}
+
+.redondo {
+    border-radius: 5px;
 }
